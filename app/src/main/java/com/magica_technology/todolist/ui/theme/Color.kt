@@ -1,6 +1,5 @@
 package com.magica_technology.todolist.ui.theme
 
-import androidx.compose.material.darkColors
 import androidx.compose.ui.graphics.Color
 
 

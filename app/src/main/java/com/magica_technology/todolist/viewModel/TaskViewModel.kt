@@ -1,9 +1,5 @@
 package com.magica_technology.todolist.viewModel
 
-import android.app.AlarmManager
-import android.app.PendingIntent
-import android.content.Context
-import android.content.Intent
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -11,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.magica_technology.todolist.repository.Repository
 import com.magica_technology.todolist.room.Task
-import com.magica_technology.todolist.alarm.AlarmReceiver
 import com.magica_technology.todolist.utils.TaskGraph
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

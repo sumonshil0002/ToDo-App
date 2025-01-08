@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
@@ -30,7 +31,7 @@
 
         </activity>
         <receiver android:name=".alarm.AlarmReceiver" android:exported="false" />
-        <activity android:name=".alarm.StopAlarmReceiver" android:exported="false" />
+        <receiver android:name=".alarm.StopAlarmReceiver" android:exported="false" />
 
     </application>
 

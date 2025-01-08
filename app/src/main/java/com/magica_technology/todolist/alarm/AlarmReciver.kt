@@ -1,5 +1,6 @@
 package com.magica_technology.todolist.alarm
 
+import android.annotation.SuppressLint
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -21,6 +22,7 @@ class AlarmReceiver:BroadcastReceiver() {
         }
     }
 
+    @SuppressLint("MissingPermission")
     private fun showAlarmNotification(context: Context) {
         val stopIntent = Intent(context, StopAlarmReceiver::class.java)
         val stopPendingIntent = PendingIntent.getBroadcast(
